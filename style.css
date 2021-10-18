@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "bf";
+  src: url("./font/IRANSansMobile_Bold.ttf") format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: bf;
+  text-decoration: none;
+  outline: none;
+  direction: rtl;
+  list-style: none;
+
+  --col-primary : #ffa400;
+}
+
+.user-information{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 0px 70px;
+  padding: 5px 0 0 0 ;
+  transition: 0.2s;
+}
+.user-information h3 , .user-information h5{
+  color: #010101;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.user-information h5{
+  color: #383838;
+}
+
+.user-information > div{
+  display: none;
+}
+
+#profile{
+  width: 50px;
+  margin-bottom: 15px;
+  border: solid #444444 3px;
+  border-radius: 50px;
+}
+
+.fa {
+  width: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 8px 10px;
+}
+
+.main-menu {
+  background-image: linear-gradient(#000000 , #1b1b1b) ;
+  border-right: 4px solid var(--col-primary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 70px;
+  overflow: hidden;
+  transition: 0.1s;
+}
+
+ul {
+  margin: 10px 5px;
+}
+
+.main-menu li {
+  margin: 5px;
+}
+.main-menu span {
+  padding-left: 30px;
+}
+.main-menu li > a {
+  display: flex;
+  align-items: center;
+  color: #e6e6e6;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+.main-menu .nav-text {
+  display: none;
+  width: 100%;
+  text-align: start;
+  padding-right: 15px;
+}
+.main-menu > ul.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+.main-menu li:hover > a,
+nav.main-menu li.active > a{
+  color: #121212;
+  background-color: var(--col-primary);
+}
+
+.main-menu:hover {
+  width: 250px;
+}
+
+.main-menu:hover .nav-text{
+  display: block;
+} 
+
+.main-menu:hover .user-information{
+  background-color: var(--col-primary);
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+.main-menu:hover .user-information > div{
+  display: block;
+}
+.main-menu:hover #profile{
+  width: 90px;
+}
