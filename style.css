@@ -1,12 +1,9 @@
-@font-face {
-  font-family: "bf";
-  src: url("./font/IRANSansMobile_Bold.ttf") format("truetype");
-}
+
 
 *{
   margin: 0;
   padding: 0;
-  font-family: bf;
+  font-family: vazir;
   text-decoration: none;
   outline: none;
   direction: rtl;
